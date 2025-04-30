@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clínica Veterinária ChuCrute</title>
+    <title>Clínica ChuCrute</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Cabeçalho (Logo + Título) -->
@@ -17,6 +18,11 @@
     </header>
     
     <!-- Menu de Navegação -->
+    <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
     <nav>
         <a href="#sobre">Sobre</a>
         <a href="#servicos">Serviços</a>
@@ -124,31 +130,35 @@
     </section>
     
     <!-- Rodapé -->
-	<footer>
-		<!-- Mantendo os contatos originais -->
-		<p>📞 <a href="tel:+551112345678">(11) 1234-5678</a> | ✉️ <a href="mailto:contato@chucrute.com.br?subject=Contato%20pelo%20site">contato@chucrute.com.br</a></p>
-		
-		<!-- Redes sociais com ícones -->
-		<div class="social-links">
-			<a href="https://www.tiktok.com" target="_blank" aria-label="TikTok">TikTok</a>
-			<a href="https://www.instagram.com" target="_blank" aria-label="Instagram">Instagram</a>
-			<a href="https://api.whatsapp.com/send?phone=5511912345678" target="_blank" aria-label="WhatsApp">WhatsApp</a>
-		</div>
-		
-		<!-- Mantendo o restante do rodapé original -->
-		<p>🐾 Horário de Atendimento: Seg-Sex 8h-19h | Sáb 9h-13h 🐾</p>
-		<p>&copy; 2025 Clínica Veterinária ChuCrute. Todos os direitos reservados.</p>
-		<p>Isso é apenas um exemplo, template, bem humorado!</p>
-	</footer>
+    <footer>
+        <p>📞 <a href="tel:+551112345678">(11) 1234-5678</a> | ✉️ <a href="mailto:contato@chucrute.com.br?subject=Contato%20pelo%20site">contato@chucrute.com.br</a></p>
+        
+        <!-- Redes sociais com Font Awesome -->
+        <div class="social-links">
+            <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5511912345678" target="_blank" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        
+        <p>🐾 Horário de Atendimento: Seg-Sex 8h-19h | Sáb 9h-13h 🐾</p>
+        <p>&copy; 2025 Clínica Veterinária ChuCrute. Todos os direitos reservados.</p>
+        <p>Isso é apenas um exemplo, template, bem humorado!</p>
+    </footer>
 
     <!-- Ícone Flutuante do WhatsApp -->
-	<a href="https://api.whatsapp.com/send?phone=5511912345678&text=Olá,%20gostaria%20de%20agendar%20uma%20consulta" 
-	   class="whatsapp-float pulse" 
-	   target="_blank"
-	   aria-label="Chat no WhatsApp">
-	   <img src="img/whatsapp-icon.png" alt="WhatsApp" class="whatsapp-icon-img">
-	</a>
-	
+    <a href="https://api.whatsapp.com/send?phone=5511912345678&text=Olá,%20gostaria%20de%20agendar%20uma%20consulta" 
+       class="whatsapp-float pulse" 
+       target="_blank"
+       aria-label="Chat no WhatsApp">
+       <i class="fab fa-whatsapp whatsapp-icon-img"></i>
+    </a>
+    
     <script src="js/main.js" defer></script>
 </body>
 </html>
