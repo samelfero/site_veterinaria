@@ -1,0 +1,318 @@
+/* Estilos Gerais */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: white;
+        }
+        
+        /* Header (Logo + Título) */
+        header {
+            background: white;
+            padding: 1rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            border-bottom: 2px solid #4CAF50;
+        }
+        
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #b350af;
+        }
+        
+        .header-text {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .header-text h1 {
+            color: #b350af;
+            margin-bottom: 5px;
+        }
+        
+        .header-text p {
+            color: #4CAF50;
+            font-style: italic;
+        }
+        
+        /* Menu de Navegação */
+        nav {
+            background: #b350af;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #b350af;
+            background-color: white;
+        }
+        
+        /* Banner Principal */
+        .banner {
+            background: white url('https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #b350af;
+            text-align: center;
+            position: relative;
+        }
+        
+        .banner h2 {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            position: relative;
+            z-index: 1;
+            color: #b350af;
+            font-weight: bold;
+            border: 2px solid #4CAF50;
+        }
+        
+        /* Seções (Serviços, Equipe, Blog, etc.) */
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #b350af;
+            font-size: 2rem;
+            position: relative;
+        }
+        
+        h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: #4CAF50;
+            margin: 10px auto;
+            border-radius: 2px;
+        }
+        
+        /* Cards (Serviços, Equipe, Blog) */
+        .services, .team, .blog {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .service-card, .team-card, .blog-card {
+            border: 2px solid #4CAF50;
+            border-radius: 8px;
+            padding: 20px;
+            width: 100%;
+            max-width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            background: white;
+        }
+        
+        .service-card:hover, .team-card:hover, .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            border-color: #b350af;
+        }
+        
+        /* Fotos da Equipe */
+        .team-photo {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 3px solid #b350af;
+        }
+        
+        .team-card h3 {
+            color: #b350af;
+            margin-bottom: 5px;
+        }
+        
+        .team-card p {
+            color: #666;
+            font-style: italic;
+        }
+        
+        /* Mapa (Google Maps) */
+        .map iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 2px solid #4CAF50;
+        }
+        
+        /* Rodapé */
+        footer {
+            background: #b350af;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 20px;
+        }
+        
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        footer p {
+            margin: 10px 0;
+        }
+        
+        .social-links {
+            margin: 15px 0;
+        }
+        
+        .social-links a {
+            margin: 0 10px;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: #4CAF50;
+        }
+        
+        /* Responsividade (Mobile, Tablet, Desktop) */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 1.5rem 0;
+            }
+            
+            .logo {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 10px;
+            }
+            
+            nav {
+                padding: 0.8rem;
+            }
+            
+            nav a {
+                display: inline-block;
+                margin: 5px;
+                padding: 5px 8px;
+                font-size: 0.9rem;
+            }
+            
+            .banner {
+                height: 250px;
+            }
+            
+            .banner h2 {
+                font-size: 1.3rem;
+                padding: 15px;
+                margin: 0 10px;
+            }
+            
+            section {
+                padding: 30px 15px;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            
+            .service-card, .team-card, .blog-card {
+                max-width: 100%;
+            }
+        }
+        
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .service-card, .team-card, .blog-card {
+                max-width: calc(50% - 20px);
+            }
+        }
+
+        /* Ícone do WhatsApp Flutuante */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+        }
+        
+        .whatsapp-icon {
+            margin-top: 5px;
+        }
+        
+        /* Efeito de pulsação */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .whatsapp-float.pulse {
+            animation: pulse 1.5s infinite;
+        }
+        
+        /* Responsivo para mobile */
+        @media (max-width: 768px) {
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 25px;
+            }
+        }
